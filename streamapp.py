@@ -289,7 +289,7 @@ elif page == "Transaction Analysis (District-level)":
 
     try:
         # Load district-level transaction data
-        txn_dist_df = pd.read_csv("/home/vishwesh/Documents/maps_transaction.csv")
+        txn_dist_df = pd.read_csv("data/maps_transaction.csv")
         txn_dist_df.columns = txn_dist_df.columns.str.strip().str.lower().str.replace(" ", "_")
         st.success("✅ District-level transaction data loaded!")
         st.write("📄 Columns:", txn_dist_df.columns.tolist())
@@ -354,7 +354,7 @@ elif page == "Insurance Analysis (District-level)":
 
     try:
         # Load district-level insurance data
-        ins_dist_df = pd.read_csv("/home/vishwesh/Documents/maps_insurance-dir1.csv")
+        ins_dist_df = pd.read_csv("data/maps_insurance-dir1.csv")
         ins_dist_df.columns = ins_dist_df.columns.str.strip().str.lower().str.replace(" ", "_")
         st.success("✅ District-level insurance data loaded successfully!")
         st.write("📄 Columns:", ins_dist_df.columns.tolist())
