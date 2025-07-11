@@ -8,6 +8,8 @@ This project leverages PhonePe's publicly available Pulse data to uncover busine
 
 👉 [PhonePe Pulse Data Source](https://github.com/PhonePe/pulse)
 
+## Visit the Streamlit Dashboard
+👉 https://phonepeproj.streamlit.app/
 ---
 
 ## 🚀 Project Highlights
