@@ -37,7 +37,7 @@ if page == "Transaction Analysis":
     st.title("📈 PhonePe Transaction Analysis")
 
     try:
-        agg_txn = pd.read_csv("/home/vishwesh/Documents/aggregated_transaction.csv")
+        agg_txn = pd.read_csv("data/aggregated_transaction.csv")
         agg_txn.columns = agg_txn.columns.str.strip().str.lower().str.replace(" ", "_")
         st.success("✅ Transaction data loaded successfully!")
         st.write("📄 Transaction Columns:", agg_txn.columns.tolist())
@@ -94,7 +94,7 @@ elif page == "Device Brand Usage":
     st.title("📱 Device Brand Usage Analysis")
 
     try:
-        brand_df = pd.read_csv("/home/vishwesh/Documents/aggregated_user1.csv")
+        brand_df = pd.read_csv("data/aggregated_user1.csv")
         brand_df.columns = brand_df.columns.str.strip().str.lower().str.replace(" ", "_")
         brand_df.rename(columns={'brand': 'device_brand'}, inplace=True)
         st.success("✅ Device brand data loaded successfully!")
@@ -154,7 +154,7 @@ elif page == "Insurance Analysis (State-level)":
 
     try:
         # Load the insurance dataset
-        ins_df = pd.read_csv("/home/vishwesh/Documents/aggregated_insurance.csv")
+        ins_df = pd.read_csv("data/aggregated_insurance.csv")
         ins_df.columns = ins_df.columns.str.strip().str.lower().str.replace(" ", "_")
         st.success("✅ Insurance state-level data loaded!")
         st.write("📄 Insurance Data Columns:", ins_df.columns.tolist())
@@ -220,7 +220,7 @@ elif page == "User Engagement (District-level)":
 
     try:
         # Load user engagement district-level data
-        user_df = pd.read_csv("/home/vishwesh/Documents/maps_user.csv")
+        user_df = pd.read_csv("data/maps_user.csv")
         user_df.columns = user_df.columns.str.strip().str.lower().str.replace(" ", "_")
         st.success("✅ User engagement data loaded successfully!")
         st.write("📄 Columns:", user_df.columns.tolist())
