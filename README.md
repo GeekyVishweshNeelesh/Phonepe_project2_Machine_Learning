@@ -14,7 +14,7 @@ This project leverages PhonePe's publicly available Pulse data to uncover busine
 
 - ✅ Converted raw JSON data from GitHub into structured CSV format (9 datasets across Aggregated, Map, and Top categories).
 - 🧼 Performed comprehensive data cleaning, wrangling, and transformation using Python (Pandas, NumPy).
-- 📈 Created over 15 visualizations to understand transaction trends, user growth, brand penetration, and regional usage.
+- 📈 Created visualisations to understand transaction trends, user growth, brand penetration, and regional usage.
 - 🔬 Performed Hypothesis Testing using ANOVA and Pearson Correlation to validate assumptions.
 - 🤖 Built ML Models for:
   - **Customer Segmentation** (KMeans Clustering)
@@ -55,7 +55,6 @@ Converted into CSV format from [PhonePe Pulse Repository](https://github.com/Pho
 - Line graphs of transaction trends over quarters
 - Pie charts of brand share among PhonePe users
 - Scatter plots and pair plots for relational analysis
-- Choropleth maps for geospatial insights (optional)
 - Heatmaps and confusion matrices for ML evaluation
 
 ---
@@ -75,7 +74,7 @@ Converted into CSV format from [PhonePe Pulse Repository](https://github.com/Pho
 
 - **Random Forest Classifier Accuracy:** ~88%
 - **Improved F1-Score for Medium class after tuning**
-- **Cluster Profiles:** Clear separation of user behavior across states
+- **Cluster Profiles:** Clear separation of user behaviour across states
 - **Hypothesis Testing Results:** All p-values < 0.05 showed statistically significant insights
 
 ---
